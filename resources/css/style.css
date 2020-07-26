@@ -8,30 +8,36 @@
 body {
 	background-color: #000000;
 	color: #ffffff;
+}
+
+.container {
+	width: 90%;
 	text-align: center;
+	margin: 0 auto;
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 3.125rem;
 	font-weight: normal;
-	margin-top: 30px;
+	margin-top: 1.875rem;
 }
 
 a {
-	font-size: 16px;
-	margin: 40px 0;
+	font-size: 1rem;
+	margin: 2.5rem 0;
 	display: block;
 	color: aquamarine;
 }
 
 h2 {
-	font-size: 42px;
+	font-size: 2.625rem;
 	font-weight: 300;
-	margin: 40px 0;
+	margin: 2.5rem 0;
 }
 
 img {
-	margin: 25px 0;
+	margin: 1.5625rem auto;
+	display: block;
 }
 
 p {
@@ -40,5 +46,21 @@ p {
 
 footer {
 	text-align: right;
-	padding: 20px;
+	padding: 1.25rem;
+}
+
+@media only screen and (max-width: 1000px) {
+	.container {
+		width: 80%;
+	}
+
+	img.camp {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	video {
+		width: 95%;
+	}
 }
